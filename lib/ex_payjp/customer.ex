@@ -27,5 +27,5 @@ defmodule ExPayjp.Customer do
   def delete_card(customer_id, card_id) do
     ExPayjp.delete("#{@endpoint}/#{customer_id}/cards/#{card_id}")
   end
-  
+
 end

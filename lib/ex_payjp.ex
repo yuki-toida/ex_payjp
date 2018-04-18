@@ -1,5 +1,5 @@
 defmodule ExPayjp do
-  alias ExPayjp.Config
+  alias ExPayjp.Environment
 
   def get(url) do
     HTTPoison.get(url, headers())
@@ -18,7 +18,7 @@ defmodule ExPayjp do
   end
 
   defp headers do
-    encode64_key = Base.encode64(Config.secret_key() <> ":")
+    encode64_key = Base.encode64(Environment.secret_key() <> ":")
     [{"Authorization", "Basic " <> encode64_key}]
   end
 
