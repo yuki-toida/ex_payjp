@@ -18,7 +18,10 @@ config :payjp,
   secret_key: "YOUR SECRET KEY",
   expiry_days: 1
 ```
-or environment variables (only :secret_key)
+
+expiry_days: default value is 1.  
+secret_key: you can use environment variables.
+
 ```bash
 export PAYJP_SECRET_KEY="YOUR SECRET KEY"
 ```

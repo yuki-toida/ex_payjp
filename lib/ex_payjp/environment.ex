@@ -5,7 +5,7 @@ defmodule ExPayjp.Environment do
   end
 
   def expiry_days do
-    Application.fetch_env!(:ex_payjp, :expiry_days)
+    Application.get_env(:ex_payjp, :expiry_days, 1)
   end
   
 end
