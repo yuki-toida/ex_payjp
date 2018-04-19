@@ -1,5 +1,4 @@
 defmodule ExPayjp.Customer do
-  alias ExPayjp
   @endpoint "https://api.pay.jp/v1/customers"
 
   def get(customer_id) do
