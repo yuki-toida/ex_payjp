@@ -26,8 +26,8 @@ defmodule ExPayjp do
     case response do
       {:error, %HTTPoison.Error{reason: reason}} -> {:error, reason}
       {:ok, %HTTPoison.Response{body: body}} ->
-        case Poison.decode!(body) |> IO.inspect() do
-          %{"error" => error} -> {:error, error["code"]}
+        case Poison.decode!(body) do
+          %{"error" => error} -> {:error, error["message"]}
           decoded_body -> {:ok, decoded_body}
         end
     end
