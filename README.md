@@ -5,7 +5,7 @@ simple HTTP client for [PAY.JP](https://pay.jp/).
 ```elixir
 def deps do
   [
-    {:ex_payjp, "~> 0.1.0"}
+    {:ex_payjp, "~> 0.3.0"}
   ]
 end
 ```
