@@ -8,7 +8,7 @@ defmodule ExPayjp.MixProject do
   def project do
     [
       app: :ex_payjp,
-      version: "0.3.0",
+      version: "0.4.0",
       elixir: "~> 1.6",
       name: "ExPayjp",
       description: @description,
