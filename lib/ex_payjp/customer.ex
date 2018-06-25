@@ -5,6 +5,10 @@ defmodule ExPayjp.Customer do
     ExPayjp.get("#{@endpoint}/#{customer_id}")
   end
 
+  def gets(limit, offset) do
+    ExPayjp.get("#{@endpoint}?limit=#{limit}&offset=#{offset}")
+  end
+
   def create(customer_id, token) do
     body = [id: customer_id, card: token]
     ExPayjp.post(@endpoint, body)
