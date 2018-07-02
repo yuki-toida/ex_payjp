@@ -8,7 +8,7 @@ defmodule ExPayjp.MixProject do
   def project do
     [
       app: :ex_payjp,
-      version: "0.4.0",
+      version: "0.5.0",
       elixir: "~> 1.6",
       name: "ExPayjp",
       description: @description,
@@ -29,7 +29,7 @@ defmodule ExPayjp.MixProject do
   defp deps do
     [
       {:ex_doc, "~> 0.18", only: :dev},
-      {:httpoison, "~> 0.11"},
+      {:httpoison, "~> 0.13"},
       {:poison, "~> 3.1"}
     ]
   end
